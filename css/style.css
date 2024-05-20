@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 header,main,footer,nav,aside,section,div {
     display: block;
 }
@@ -13,11 +12,9 @@ header,main,footer,nav,aside,section,div {
     margin: 0 auto;
     padding: 20px;
 }
-/* Specific heights for each page if needed */
-
 body {
     background-color: #FFF;
-    font-family: Nunito, sans-serif;
+    font-family: Nunito, sans-serif; 
 }
 header {
     background-color: #FFF;
@@ -25,20 +22,17 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-
 #logoRectangle {
     display: flex;
     align-items: center;
     margin-left: 32px;
 }
-
 #logo img {
     width: 64px;
     height: 64px;
     flex-shrink: 0;
     margin-bottom: 32px;
 }
-
 #logoName {
     color: #3E3F43;
     font-family: Nunito;
@@ -63,9 +57,7 @@ nav a {
     font-weight: 400;
     line-height: normal;
     margin-left: 64px;
-    /* Adjusted margin between menu options */
     text-decoration: none;
-    /* Remove default underline */
     margin-bottom: 39px;
     color: purple;
     transition: color 0.3s ease;
@@ -76,21 +68,16 @@ nav a:hover {
 }
 #home {
     margin-left: 135px;
-    /* Adjusted margin between Home and Spotify */
 }
 #ourPlaylist {
     margin-left: 64px;
-    /* Adjusted margin between Our Playlist and Home */
 }
 #about {
     margin-left: 64px;
-    /* Adjusted margin between About and Our Playlist */
 }
 #contact {
     margin-left: 64px;
-    /* Adjusted margin between Contact and About */
     margin-right: 120px;
-    /* adjusted margin between contact and wall*/
 }
 .image-container {
     position: relative;
@@ -105,13 +92,9 @@ nav a:hover {
 .text-overlay {
     position: absolute;
     top: 32px;
-    /* Adjusted distance from the top */
     left: 32px;
-    /* Adjusted distance from the left */
     right: 720px;
-    /* Adjusted distance from the right */
     bottom: 535px;
-    /* Adjusted distance from the bottom */
     padding: 20px;
     box-sizing: border-box;
 }
@@ -132,12 +115,10 @@ nav a:hover {
     font-weight: 600;
     line-height: normal;
 }
-
 #about-section {
     margin-left: 32px;
     margin-top: 32px;
 }
-
 #about-section h2 {
     color: #612999;
     font-family: Rubik;
@@ -148,7 +129,6 @@ nav a:hover {
     margin-bottom: 32px;
     
 }
-
 #about-section p {
     color: #000;
     text-align: justify;
@@ -160,8 +140,6 @@ nav a:hover {
     margin-right: 32px;
     margin-bottom: 24px;
     margin-left: 32px;
-    /* Add bottom margin between paragraphs */
-
 }
 .cards-section {
     margin-right: 32px;
@@ -183,7 +161,6 @@ nav a:hover {
     margin-bottom: 32px; 
     margin-left: 32px;
 }
-
 .song-card {
     position: relative;
     width: 376px;
@@ -195,29 +172,24 @@ nav a:hover {
     background: #EFECFF;
     box-shadow: 0px 6px 40px 0px rgba(57, 132, 187, 0.05);
 }
-
-/* Style for card image */
 .song-card img {
     width: 376px;
     height: 276px;
     object-fit: cover;
     border-radius: 38px 38px 38px 38px;
 }
-
-/* Style for card details */
 .song-details {
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%; /* Ensure it takes up the full height of the card */
+    height: 100%; 
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
 }
-
 .song-details h3 {
     color: #000;
     text-align: justify;
@@ -229,7 +201,6 @@ nav a:hover {
     left: 32px;
     top: 302px;
 }
-
 .song-details p {
     color: #333;
     font-family: Abel;
@@ -240,7 +211,6 @@ nav a:hover {
     top: 342px;
     left: 32px;
 }
-
 .song-details .price {
     color: #612999;
     text-align: justify;
@@ -252,14 +222,12 @@ nav a:hover {
     left: 32px;
     bottom: 36px; 
 }
-
 .ellipse {
     z-index: 1;
     position: absolute;
     bottom: 27px;
     right: 51px;
 }
-
 .basket {
     z-index: 2;
     position: absolute;
@@ -267,14 +235,12 @@ nav a:hover {
     top: 14px;
     background-size: 100%;
 }
-
 .elipseHeart {
     z-index: 1;
     position: absolute;
     top: 35px;
     right: 52px;
 }
-
 .heart {
     z-index: 2;
     position: absolute;
@@ -282,38 +248,35 @@ nav a:hover {
     top: 14px;
     background-size: 100%;
 }
-
 .ellipse img {
     width: 63px;
     height: 63px;
     flex-shrink: 0;
 }
-
 .basket img {
     width: 31px;
     height: 31px;
     flex-shrink: 0;
 }
-
 .elipseHeart img {
     width: 47px;
     height: 47px;
     flex-shrink: 0;
 }
-
 .heart img {
     width: 23px;
     height: 20px;
     flex-shrink: 0;
 }
-
-
-/* Footer styles */
 .footer-container {
     width: 100%;
     background: #EFECFF;
     display: flex;
     flex-shrink: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Ensure it's above other elements */
 }
 
 .footer-columns {
@@ -336,108 +299,52 @@ nav a:hover {
 .second-column {
     top: 32px;
     left: 308px;
-    /* Adjust left positioning if needed */
 }
 
-.first-column h3 {
+.column h3 {
     margin: 0;
-    /* Reset margin */
     margin-bottom: 16px;
 }
 
-.first-column a {
+.column a {
     display: block;
-    /* Make the links block elements to control vertical spacing */
     margin-bottom: 8px;
-    /* Default margin-bottom for all links */
 }
-
-.first-column a:nth-child(1) {
-    margin-bottom: 8px;
-    /* 8px between About and Team */
-}
-
-.first-column a:nth-child(2) {
-    margin-bottom: 8px;
-    /* 8px between Team and Work With Us */
-}
-
 .first-column a:nth-child(3) {
     margin-bottom: 24px;
-    /* 16px between Work With Us and social icons */
 }
-
 .first-column .social-icons {
     display: flex;
-    /* Use flexbox for layout */
 }
-
 .first-column .social-icons a {
     margin-right: 24px;
-    /* Default margin between icons */
 }
-
 .first-column .social-icons a:nth-child(2) {
     margin-right: 24.38px;
-    /* Specific margin between Twitter and Facebook */
     margin-bottom: 16px;
 }
-
-/* Adjust margin-bottom for the copyright text */
 .footer-container p {
     margin-bottom: 51px;
 }
 
-.second-column a {
-    display: block;
-    /* Make the links block elements to control vertical spacing */
-}
-
-.second-column h3 {
-    margin: 0;
-    /* Reset margin */
-    margin-bottom: 16px;
-
-}
-
-/* Adjust distances between links in the second column */
-.second-column a:nth-child(1) {
-    margin-bottom: 8px;
-    /* Distance between "twitter and facebook" */
-}
-
-.second-column a:nth-child(2) {
-    margin-bottom: 8px;
-    /* Distance between facebook and instgram*/
-}
-
 .second-column a:nth-child(3) {
     margin-bottom: 129px;
-    /* Distance between "Instagram" and bottom */
 }
-
 .product-container {
     display: flex;
 }
-
-
-
 .product img {
     width: 100%;
     border: 4px solid #E6DBFE;
     margin-bottom: 32px;
 }
-
-/* Apply specific styles to each image */
 .product:nth-child(1) img {
     width: 300px;
     height: 300px;
     flex-shrink: 0;
     margin-top: 39px;
     margin-left: 32px;
-    /* Add margin-left to the first image */
 }
-
 .product:nth-child(2) img {
     width: 388.286px;
     height: 300px;
@@ -445,20 +352,13 @@ nav a:hover {
     margin-top: 39px;
     margin-left: 32px;
 }
-
 .product:nth-child(3) img {
     width: 300px;
     height: 300px;
     flex-shrink: 0;
     margin-top: 39px;
     margin-left: 31.71px;
-    /* Add margin-left to subsequent images */
-
 }
-
-
-
-/* Style for the h2 heading */
 main h2 {
     color: #612999;
     font-family: Rubik;
@@ -466,13 +366,10 @@ main h2 {
     font-style: normal;
     font-weight: 500;
     line-height: 40px;
-    /* 100% */
     margin-top: 32px;
     margin-left: 32px;
     
 }
-
-/* Style for the unordered list */
 main ul {
     color: #000;
     font-family: Rubik;
@@ -480,17 +377,14 @@ main ul {
     font-style: normal;
     font-weight: 400;
     line-height: 14px;
-    /* 58.333% */
     margin-bottom: 32px;
     align-items: center;
 }
-
 .singer-item {
     list-style-type: none;
     margin-top: 16px;
 
 }
-
 .icon-container {
     display: inline-block;
     position: relative;
@@ -500,7 +394,6 @@ main ul {
 
 
 }
-
 .rocket-icon {
     width: 29px;
     height: 42.385px;
@@ -509,13 +402,11 @@ main ul {
     left: 25px;
 
 }
-
 .circle-icon {
     width: 82px;
     height: 82px;
     flex-shrink: 0;
 }
-
 .form-container {
     background-color: white;
     border-radius: 5px;
@@ -525,30 +416,26 @@ main ul {
     margin-right: 32px;
     
 }
-
 h2 {
     margin-left: 32;
     margin-bottom: 32px;
 }
-
 .form-group {
     margin-bottom: 32px;
     margin-left: 32px;
 }
-
 label {
     display: block;
     margin-bottom: 5px;
 }
-
 input.small {
     width: 100%;
     padding: 32px;
     box-sizing: border-box;
     margin-right: 32px;
     margin-left: 32px;
+    
 }
-
 button {
     background-color: #4CAF50;
     color: white;
@@ -556,7 +443,6 @@ button {
     border: none;
     cursor: pointer;
 }
-
 button:hover {
     background-color: #45a049;
 }
