@@ -49,15 +49,14 @@ nav {
 }
 nav a {
     position: relative;
+    margin: 0 64px 39px 0;
     color: #612999;
     font-family: Nunito;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-left: 64px;
     text-decoration: none;
-    margin-bottom: 39px;
     color: purple;
     transition: color 0.3s ease;
 }
@@ -68,12 +67,69 @@ nav a.HomeSelected {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    font-weight: bold; 
 }
 #contact {
     margin-right: 120px;
 }
 nav a:hover {
     color: rgb(243, 10, 243);
+}
+.footer-container {
+    width: 100%;
+    background: #EFECFF;
+    display: flex;
+    flex-shrink: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+.footer-columns {
+    width: 100%;
+    max-width: 1200px;
+    height: 287px;
+    position: relative;
+    margin-left: 32px;
+}
+.column {
+    position: absolute;
+}
+.first-column {
+    top: 32px;
+    left: 32px;
+}
+.second-column {
+    top: 32px;
+    left: 308px;
+}
+.column h3 {
+    margin: 0;
+    margin-bottom: 16px;
+}
+.column a {
+    display: block;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+.first-column a:nth-child(3) {
+    margin-bottom: 24px;
+}
+.first-column .social-icons {
+    display: flex;
+}
+.first-column .social-icons a {
+    margin-right: 24px;
+}
+.first-column .social-icons a:nth-child(2) {
+    margin-right: 24.38px;
+    margin-bottom: 16px;
+}
+.footer-container p {
+    margin-bottom: 51px;
+}
+.second-column a:nth-child(3) {
+    margin-bottom: 129px;
 }
 .image-container {
     position: relative;
@@ -154,7 +210,6 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fill, 376px); 
     gap: 32px; 
-    margin-bottom: 32px; 
     margin-left: 32px;
 }
 .song-card {
@@ -167,11 +222,12 @@ nav a:hover {
     border-radius: 38px;
     background: #EFECFF;
     box-shadow: 0px 6px 40px 0px rgba(57, 132, 187, 0.05);
+    margin-bottom: 32px; 
+
 }
 .song-card:last-child {
     margin-bottom: 319px; /* Ensures space above the footer only for the last row */
 }
-
 .song-card img {
     width: 376px;
     height: 276px;
@@ -268,68 +324,6 @@ nav a:hover {
     height: 20px;
     flex-shrink: 0;
 }
-.footer-container {
-    width: 100%;
-    background: #EFECFF;
-    display: flex;
-    flex-shrink: 0;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 1000; /* Ensure it's above other elements */
-}
-
-.footer-columns {
-    width: 100%;
-    max-width: 1200px;
-    height: 287px;
-    position: relative;
-    margin-left: 32px;
-}
-
-.column {
-    position: absolute;
-}
-
-.first-column {
-    top: 32px;
-    left: 32px;
-}
-
-.second-column {
-    top: 32px;
-    left: 308px;
-}
-
-.column h3 {
-    margin: 0;
-    margin-bottom: 16px;
-}
-
-.column a {
-    display: block;
-    margin-bottom: 8px;
-}
-.first-column a:nth-child(3) {
-    margin-bottom: 24px;
-}
-.first-column .social-icons {
-    display: flex;
-}
-.first-column .social-icons a {
-    margin-right: 24px;
-}
-.first-column .social-icons a:nth-child(2) {
-    margin-right: 24.38px;
-    margin-bottom: 16px;
-}
-.footer-container p {
-    margin-bottom: 51px;
-}
-
-.second-column a:nth-child(3) {
-    margin-bottom: 129px;
-}
 nav a.PlaylistSelected {
     color: #612999;
     font-family: Nunito;
@@ -337,6 +331,7 @@ nav a.PlaylistSelected {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    font-weight: bold; 
 
 }
 .product-container {
@@ -368,7 +363,6 @@ nav a.PlaylistSelected {
     margin-top: 39px;
     margin-left: 31.71px;
 }
-
 main h2 {
     color: #612999;
     font-family: Rubik;
@@ -419,13 +413,12 @@ main ul {
 }
 .form-container {
     background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(16, 225, 79, 0.1);
     margin-bottom: 485px; /* 198 + 287 */
     margin-left: 32px;
     margin-right: 32px;
     box-sizing: border-box;
-    
+    border: 4px solid #E6DBFE;
 }
 h2 {
     color: #612999;
@@ -444,8 +437,13 @@ h2 {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #9e1295; 
-    
+    color: #333;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+    text-transform: uppercase;
 }
 input.small {
     width: 100%;
@@ -453,7 +451,7 @@ input.small {
     box-sizing: border-box;
     margin-right: 32px;
     margin-left: 32px;
-    border: 1px solid #921d1d
+    border: 1px solid #502b84
     
 }
 button {
