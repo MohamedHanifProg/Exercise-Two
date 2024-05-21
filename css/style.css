@@ -11,9 +11,9 @@ header,main,footer,nav,aside,section,div {
     max-width: 1200px;
     margin: 0 auto;
 }
-body {
-    background-color: #FFF;
-    font-family: Nunito, sans-serif; 
+body,html {
+    font-family: 'Nunito';
+    background-color: #fff;  
 }
 header {
     background-color: #FFF;
@@ -75,7 +75,7 @@ nav a.HomeSelected {
 nav a:hover {
     color: rgb(243, 10, 243);
 }
-.footer-container {
+footer {
     width: 100%;
     background: #EFECFF;
     display: flex;
@@ -85,15 +85,22 @@ nav a:hover {
     left: 0;
     z-index: 1000; /* Ensure it's above other elements */
 }
-.footer-columns {
+.footer-container {
     width: 100%;
     max-width: 1200px;
     height: 287px;
     position: relative;
     margin-left: 32px;
+    
 }
 .column {
     position: absolute;
+    color: #333;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 .first-column {
     top: 32px;
@@ -117,9 +124,11 @@ nav a:hover {
 }
 .first-column .social-icons {
     display: flex;
+    
 }
 .first-column .social-icons a {
     margin-right: 24px;
+    margin-top: 16px;
 }
 .first-column .social-icons a:nth-child(2) {
     margin-right: 24.38px;
@@ -206,11 +215,12 @@ nav a:hover {
     line-height: 40px;
     margin-bottom: 32px;
 }
-.popular-songs {
+.body-songs {
     display: grid;
     grid-template-columns: repeat(auto-fill, 376px); 
     gap: 32px; 
     margin-left: 32px;
+    margin-bottom: 32px;
 }
 .song-card {
     position: relative;
@@ -223,7 +233,6 @@ nav a:hover {
     background: #EFECFF;
     box-shadow: 0px 6px 40px 0px rgba(57, 132, 187, 0.05);
     margin-bottom: 32px; 
-
 }
 .song-card:last-child {
     margin-bottom: 319px; /* Ensures space above the footer only for the last row */
@@ -323,6 +332,7 @@ nav a:hover {
     width: 23px;
     height: 20px;
     flex-shrink: 0;
+    border-radius: 0%;
 }
 nav a.PlaylistSelected {
     color: #612999;
