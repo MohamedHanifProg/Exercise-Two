@@ -41,7 +41,6 @@ header {
     line-height: normal;
     letter-spacing: 6px;
     margin-bottom: 42px;
-
 }
 nav {
     display: flex;
@@ -91,7 +90,6 @@ footer {
     height: 287px;
     position: relative;
     margin-left: 32px;
-    
 }
 .column {
     position: absolute;
@@ -124,7 +122,6 @@ footer {
 }
 .first-column .social-icons {
     display: flex;
-    
 }
 .first-column .social-icons a {
     margin-right: 24px;
@@ -188,7 +185,6 @@ footer {
     font-weight: 500;
     line-height: 40px;
     margin-bottom: 32px;
-    
 }
 #about-section p {
     color: #000;
@@ -405,8 +401,6 @@ main ul {
     margin-left: 32px;
     margin-right: 16px;
     vertical-align: middle;
-
-
 }
 .rocket-icon {
     width: 29px;
@@ -414,7 +408,6 @@ main ul {
     position: absolute;
     top: 20px;
     left: 25px;
-
 }
 .circle-icon {
     width: 82px;
@@ -462,7 +455,6 @@ input.small {
     margin-right: 32px;
     margin-left: 32px;
     border: 1px solid #502b84
-    
 }
 button {
     background-color: #4CAF50;
