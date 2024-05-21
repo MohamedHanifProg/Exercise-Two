@@ -24,12 +24,13 @@ header {
 #logoRectangle {
     display: flex;
     align-items: center;
-    margin:  32px 0px 32px 32px;
+    margin-left: 32px;
 }
 #logo img {
     width: 64px;
     height: 64px;
     flex-shrink: 0;
+    margin-bottom: 32px;
 }
 #logoName {
     color: #3E3F43;
@@ -39,10 +40,14 @@ header {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 6px;
+    align-self: center;
+    margin-bottom: 42px;
 }
 nav {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 nav a {
     position: relative;
