@@ -62,15 +62,6 @@ nav a {
     color: purple;
     transition: color 0.3s ease;
 }
-nav a.HomeSelected { 
-    color: #612999;
-    font-family: Nunito;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    font-weight: bold; 
-}
 #contact {
     margin-right: 120px;
 }
@@ -341,16 +332,6 @@ footer {
     height: 20px;
     flex-shrink: 0;
     border-radius: 0%;
-}
-nav a.PlaylistSelected {
-    color: #612999;
-    font-family: Nunito;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    font-weight: bold; 
-
 }
 .product-container {
     display: flex;
