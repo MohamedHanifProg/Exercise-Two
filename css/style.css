@@ -89,7 +89,6 @@ footer {
     max-width: 1200px;
     height: 287px;
     position: relative;
-    
 }
 .column {
     position: absolute;
@@ -211,7 +210,7 @@ footer {
     margin-left: 32px;
 }
 .cards-section {
-    margin-right: 32px;
+    margin-bottom: 319px; /* 287 + 32 = 319 distance from last card and footer rect */
 }
 .cards-section h2 { 
     color: #612999;
@@ -239,9 +238,7 @@ footer {
     background: #EFECFF;
     box-shadow: 0px 6px 40px 0px rgba(57, 132, 187, 0.05);
 }
-.song-card:last-child {
-    margin-bottom: 319px; /* Ensures space above the footer only for the last row */
-}
+
 .song-card img {
     width: 376px;
     height: 276px;
@@ -373,7 +370,6 @@ main h2 {
     line-height: 40px;
     margin-top: 32px;
     margin-left: 32px;
-    
 }
 main ul {
     color: #000;
@@ -388,7 +384,6 @@ main ul {
 .singer-item {
     list-style-type: none;
     margin-top: 16px;
-
 }
 .icon-container {
     display: inline-block;
